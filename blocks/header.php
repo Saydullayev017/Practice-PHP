@@ -3,16 +3,15 @@
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none"> SJ </a>
       </div>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2">Features</a></li>
-        <li><a href="#" class="nav-link px-2">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
-      </ul>
+      <nav class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <a href="#" class="p-2 text-dark">Главная</a>
+        <a href="#" class="p-2 text-dark">Основная</a>
+      </nav>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
-      </div>
+      <!-- если у нас будет установлена куки то мы будем вводить кабинет пользователя а если нет будем вводит кабинет войти -->
+      <?php if($_COOKIE['user'] == 'true'):?>  <!-- если у нас куки [user] будет равно 'true' в таком случии мы будем вводит кабинет пользователя-->
+        <a type="button" class="btn btn-outline-primary me-2" href="/auth.php">Кабинет пользователя</a>
+      <?php else: ?> <!-- иначе будем вводить кнопку войти -->
+        <a type="button" class="btn btn-primary" href="/auth.php">Войти</a>
+      <?php endif; ?>
     </header>

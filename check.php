@@ -32,4 +32,8 @@
     // 3) message само сообщение
     // 4) headers это загаловки
     mail('admin@gmail.com', $subject, $message, $headers);
+
+
+    // это функция отвечат после успешно заполненние формы страница возврашется about.php
+    header('Location: /about.php');
 ?>
