@@ -4,8 +4,8 @@
       </div>
 
       <nav class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <a href="#" class="p-2 text-dark">Главная</a>
-        <a href="#" class="p-2 text-dark">Основная</a>
+        <a href="/" class="p-2 text-dark">Главная</a>
+        <a href="/about.php" class="p-2 text-dark">Контакты</a>
       </nav>
 
       <!-- если у нас будет установлена куки то мы будем вводить кабинет пользователя а если нет будем вводит кабинет войти -->
